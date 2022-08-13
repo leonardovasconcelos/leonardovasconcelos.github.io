@@ -27,26 +27,8 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyCJjyUaVsKC-AQ_PB9qmOmgI-YbWvY9GDQ",
-      authDomain: "lojaflutter-8419b.firebaseapp.com",
-      projectId: "lojaflutter-8419b",
-      storageBucket: "lojaflutter-8419b.appspot.com",
-      messagingSenderId: "989667879735",
-      appId: "1:989667879735:web:2223bf571e3b99ba8288b2"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-  </script>
-  
+
+ 
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
@@ -114,6 +96,30 @@
       // Service workers not supported. Just drop the <script> tag.
       loadMainDartJs();
     }
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCJjyUaVsKC-AQ_PB9qmOmgI-YbWvY9GDQ",
+      authDomain: "lojaflutter-8419b.firebaseapp.com",
+      projectId: "lojaflutter-8419b",
+      storageBucket: "lojaflutter-8419b.appspot.com",
+      messagingSenderId: "989667879735",
+      appId: "1:989667879735:web:0c62ddb4ac73bcb28288b2"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
   </script>
 </body>
 </html>

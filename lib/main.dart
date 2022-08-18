@@ -15,6 +15,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   final Future<FirebaseApp> _inicialization = Firebase.initializeApp();
+
   @override
   Widget build(BuildContext context) {
     return ScopedModel<UserModel>(

@@ -23,52 +23,9 @@ class ProfilersTab extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "Nome: ${!model.isLoggedIn() ? "" : model.userData["name"]}",
+                      "${!model.isLoggedIn() ? "" : model.userData["a"]}",
                       style: TextStyle(
                           fontSize: 18.0, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    Text(
-                      "E-mail: ${!model.isLoggedIn() ? "" : model.userData["email"]}",
-                      style: TextStyle(
-                          fontSize: 18.0, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    Text(
-                      "Data de Nascimento: ${!model.isLoggedIn() ? "" : model.userData["date"]}",
-                      style: TextStyle(
-                          fontSize: 18.0, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    Text(
-                      "Endereço: ${!model.isLoggedIn() ? "" : model.userData["address"]}",
-                      style: TextStyle(
-                          fontSize: 18.0, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 4.0,
-                    ),
-                    GestureDetector(
-                      child: Text(
-                        !model.isLoggedIn() ? "Entre ou cadastre-se >" : "Sair",
-                        style: TextStyle(
-                            color: Theme.of(context).primaryColor,
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      onTap: () {
-                        if (!model.isLoggedIn())
-                          Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => LoginScreen()));
-                        else
-                          model.signOut();
-                      },
                     ),
                   ],
                 );

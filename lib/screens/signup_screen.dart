@@ -38,7 +38,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               children: <Widget>[
                 TextFormField(
                   controller: _nameController,
-                  decoration: InputDecoration(hintText: "Nome Completo"),
+                  decoration: InputDecoration(hintText: "Nomi Completo"),
                   validator: (text) {
                     if (text.isEmpty) return "Nome Inválido!";
                   },
@@ -49,7 +49,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 TextFormField(
                   controller: _dateController,
                   keyboardType: TextInputType.datetime,
-                  decoration: InputDecoration(hintText: "Data de Nascimento"),
+                  decoration: InputDecoration(hintText: "Data de Nasmicento"),
                   validator: (text) {
                     if (text.isEmpty) return "Data Inválida!";
                   },
@@ -72,7 +72,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 TextFormField(
                   controller: _passController,
                   decoration: InputDecoration(hintText: "Senha"),
-                  obscureText: true,
                   validator: (text) {
                     if (text.isEmpty || text.length < 6)
                       return "Senha inválida!";

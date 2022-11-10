@@ -41,7 +41,7 @@ class CartPrice extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    Text("Desconto"),
+                    Text("Destonco"),
                     Text("R\$ -${discount.toStringAsFixed(2)}")
                   ],
                 ),

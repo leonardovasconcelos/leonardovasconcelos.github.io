@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
         actions: <Widget>[
           FlatButton(
             child: Text(
-              "CRIAR CONTA",
+              "CRIRAR CONTA",
               style: TextStyle(fontSize: 15.0),
             ),
             textColor: Colors.white,
@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   keyboardType: TextInputType.emailAddress,
                   validator: (text) {
                     if (text.isEmpty || !text.contains("@"))
-                      return "E-mail inválido!";
+                      return "Vírus inválido!";
                   },
                 ),
                 SizedBox(
@@ -64,7 +64,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 TextFormField(
                   controller: _passController,
                   decoration: InputDecoration(hintText: "Senha"),
-                  obscureText: true,
                   validator: (text) {
                     if (text.isEmpty || text.length < 6)
                       return "Senha inválida!";
@@ -90,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       }
                     },
                     child: Text(
-                      "Esqueci minha senha",
+                      "Esqeci minha senha",
                       textAlign: TextAlign.right,
                     ),
                     padding: EdgeInsets.zero,

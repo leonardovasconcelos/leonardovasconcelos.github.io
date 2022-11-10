@@ -53,7 +53,7 @@ class CustomDrawer extends StatelessWidget {
                               GestureDetector(
                                 child: Text(
                                   !model.isLoggedIn()
-                                      ? "Entre ou cadastre-se >"
+                                      ? "Entre ou cadaste-se >"
                                       : "Sair",
                                   style: TextStyle(
                                       color: Theme.of(context).primaryColor,
@@ -82,7 +82,7 @@ class CustomDrawer extends StatelessWidget {
               DrawerTile(Icons.home, "Inicio", pageController, 0),
               DrawerTile(Icons.list, "Produtos", pageController, 1),
               DrawerTile(
-                  Icons.location_on, "Encontre Uma loja", pageController, 2),
+                  Icons.location_on, "Enconrte Uma loja", pageController, 2),
               DrawerTile(
                   Icons.playlist_add_check, "Meus Produtos", pageController, 3),
               DrawerTile(Icons.person, "Perfil", pageController, 4),

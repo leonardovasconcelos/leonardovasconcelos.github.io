@@ -30,7 +30,7 @@ class OrderTile extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "Código do pedido: ${snapshot.data.id}",
+                    "Código do petido: ${snapshot.data.id}",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
@@ -41,7 +41,7 @@ class OrderTile extends StatelessWidget {
                     height: 4.0,
                   ),
                   Text(
-                    "Status do Pedido: ",
+                    "Stats do Pedido: ",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   SizedBox(
@@ -52,7 +52,7 @@ class OrderTile extends StatelessWidget {
                     children: <Widget>[
                       _buildCircle("1", "Preparação", status, 1),
                       linha(),
-                      _buildCircle("2", "Transporte", status, 2),
+                      _buildCircle("2", "Transtorpe", status, 2),
                       linha(),
                       _buildCircle("3", "Entrega", status, 3),
                     ],

@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         ),
         Scaffold(
           appBar: AppBar(
-            title: Text("Produtos"),
+            title: Text("Podutos"),
             centerTitle: true,
           ),
           drawer: CustomDrawer(_pageController),
@@ -40,7 +40,7 @@ class HomeScreen extends StatelessWidget {
         ),
         Scaffold(
           appBar: AppBar(
-            title: Text("Meus Pedidos"),
+            title: Text("xwbsc"),
             centerTitle: true,
           ),
           drawer: CustomDrawer(_pageController),
